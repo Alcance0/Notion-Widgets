@@ -6,14 +6,22 @@
     <title>Notion Widgets</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Roboto', sans-serif; /* Updated font to Roboto */
             background-color: #1e1e1e; /* Dark Gray */
             margin: 0;
             padding: 0;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
+        }
+
+        #title {
+            font-size: 24px;
+            font-weight: bold; /* Make the title bold */
+            color: #fff; /* White */
+            margin-bottom: 20px;
         }
 
         #container {
@@ -30,7 +38,7 @@
             padding: 10px 20px;
             margin: 10px;
             font-size: 16px;
-            font-weight: bold;
+            font-weight: bold; /* Make the button text bold */
             text-align: center;
             text-transform: uppercase;
             border: 2px solid #030364; /* Dark Blue */
@@ -50,6 +58,7 @@
     </style>
 </head>
 <body>
+    <div id="title">WIDGETS</div>
     <div id="container">
         <a class="button" href="Heatmap.html" title="Heatmap">Heatmap</a>
         <a class="button" href="TickerTape.html" title="Ticker Tape">Ticker Tape</a>
